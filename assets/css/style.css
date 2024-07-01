@@ -4,6 +4,8 @@
 
 :root {
   --primary-color: #7264d6;
+  --secondary-color: #212832;
+  --text-color: #696d76;
 }
 
 html {
@@ -16,13 +18,18 @@ body {
   background: #fff;
 }
 
+/* Common */
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #212832;
+  color: var(--secondary-color);
 }
 
 input,
@@ -31,4 +38,96 @@ select,
 button {
   font-size: inherit;
   font-family: inherit;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.btn {
+  --height: 58px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 149px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 8px;
+  background: var(--primary-color);
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  padding: 26px 0;
+}
+
+.header__body {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  margin-left: 70px;
+}
+.navbar__list {
+  display: flex;
+}
+.navbar__item {
+}
+
+.navbar__link,
+.header-cta__login {
+  padding: 8px 24px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: var(--text-color);
+}
+
+.navbar__link:hover,
+.header-cta__login:hover {
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active {
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.navbar__link--active::after {
+  position: absolute;
+  bottom: 7px;
+  left: 23px;
+
+  content: "";
+  display: inline-block;
+  width: calc(100% - 48px);
+  height: 1px;
+  border-radius: 0.5px;
+  background: var(--primary-color);
+}
+
+.header-cta {
+  margin-left: auto;
+}
+.header-cta__login {
+  margin-right: 4px;
+}
+
+.header-cta__sign-up {
+  --height: 52px;
+  min-width: 113px;
+  background: var(--secondary-color);
+}
+
+.header-cta__sign-up:hover {
+  opacity: 90%;
 }
