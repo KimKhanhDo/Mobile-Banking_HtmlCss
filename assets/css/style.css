@@ -65,6 +65,17 @@ button {
   color: #fff;
 }
 
+.btn:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.text-desc {
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: var(--text-color);
+}
+
 /* Header */
 .header {
   padding: 26px 0;
@@ -80,8 +91,6 @@ button {
 }
 .navbar__list {
   display: flex;
-}
-.navbar__item {
 }
 
 .navbar__link,
@@ -130,4 +139,180 @@ button {
 
 .header-cta__sign-up:hover {
   opacity: 90%;
+}
+
+/* Hero */
+.hero {
+  margin-top: 50px;
+}
+
+.hero__body {
+  display: flex;
+  align-items: center;
+}
+.hero__content {
+  width: 46%;
+}
+.hero__label {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696d77;
+  margin-left: 30px;
+}
+
+.hero__label::before {
+  position: absolute;
+  top: 14px;
+  left: -30px;
+
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: var(--text-color);
+}
+
+.hero__heading,
+.hero__span {
+  margin-top: 12px;
+  color: var(--secondary-color);
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.hero__span {
+  color: var(--primary-color);
+}
+.hero__desc {
+  margin-top: 20px;
+  width: 540px;
+}
+.subscribe-form {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+
+  width: 540px;
+  height: 74px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+.subscribe-form__input {
+  padding: 23px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: inherit;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: var(--text-color);
+}
+.subscribe-form__submit {
+  margin: 8px 8px 8px 0;
+  outline: none;
+  border: none;
+}
+.subscribe-form__desc {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.71;
+  color: var(--text-color);
+}
+
+.hero__media {
+  position: relative;
+  margin-left: 160px;
+}
+.hero__img {
+  width: 296px;
+  height: 562px;
+  border-radius: 40px;
+}
+
+.hero__deposit,
+.hero__interest,
+.hero__fund {
+  position: absolute;
+}
+
+.hero__deposit {
+  display: flex;
+  align-items: center;
+  top: 113px;
+  left: -100px;
+  padding: 14px 10px;
+
+  width: 174px;
+  height: 46px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.hero__deposit-desc {
+  margin-left: 8px;
+  font-weight: 600;
+  color: #31456a;
+}
+.hero__deposit-price-tag {
+  margin-left: 19px;
+  color: #4ab5e3;
+}
+.hero__interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  top: 127px;
+  right: -174px;
+
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #da6464;
+}
+
+.hero__interest-percentage {
+  font-size: 4.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.hero__interest-desc {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.hero__fund {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 11px;
+
+  bottom: 61px;
+  right: -74px;
+
+  width: 124px;
+  height: 68px;
+  border-radius: 10px;
+  background: #439f90;
+}
+
+.hero__fund-price-tag {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+}
+.hero__fund-desc {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  line-height: 0.8;
+  color: #fff;
 }
