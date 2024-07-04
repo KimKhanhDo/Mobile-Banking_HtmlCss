@@ -687,3 +687,130 @@ button {
 .card-list .card-item:last-child {
   background: #f9ea63;
 }
+
+/* Client */
+.client {
+  margin-top: 160px;
+}
+
+.client__top {
+  text-align: center;
+}
+
+.client__label {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.client__label::before {
+  top: 14px;
+  left: 0;
+}
+
+.client__desc {
+  margin: 18px auto 0;
+  width: 435px;
+  font-size: 1.6rem;
+  line-height: 1, 75;
+}
+
+.client__bottom {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client__feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Create Bubble Chat */
+.client__bubble-chat {
+  position: relative;
+  padding: 42px 28px;
+  width: 570px;
+  height: 254px;
+  border: 1px solid #dfe2e8;
+  border-radius: 14px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.client__bubble-chat::after {
+  position: absolute;
+  left: 43%;
+  transform: translateX(-55%);
+  bottom: -40px;
+
+  content: "";
+  width: 43px;
+  height: 43px;
+  background: #fff;
+  border: 1px solid;
+  border-color: #dfe2e8 #dfe2e8 transparent transparent;
+  rotate: 135deg;
+}
+
+.client__bubble-chat:hover {
+  filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+  transform: translateY(-10px);
+}
+
+.client__conversation {
+  text-align: center;
+  font-style: italic;
+  font-size: 2.2rem;
+  line-height: 1.54;
+  color: var(--text-color);
+}
+
+.client__profile {
+  margin: 96px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client__avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.client__name {
+  margin-top: 20px;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+  color: #070052;
+}
+
+.client__job {
+  margin-top: 2px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: var(--text-color);
+}
+
+.client__dots {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.client__dot {
+  width: 22px;
+  height: 6px;
+  background: #fff;
+  border-radius: 1px;
+  border: 1px solid #9b9fab;
+}
+
+.client__dot-active {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
